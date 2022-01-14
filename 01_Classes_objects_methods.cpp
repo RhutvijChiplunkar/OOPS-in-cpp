@@ -32,7 +32,15 @@ public:
         cout<<"==================="<<endl;
     }
 
+    //declare method here and define outside the class
+    string fullName(string name,string surname);
+
 };
+
+//method is defined outside the class
+string Student::fullName(string name,string surname){
+    return name+" "+surname;
+}
 
 int main(){
     //Creation of object of a class
@@ -43,6 +51,7 @@ int main(){
     s1.skills.push_back("C++");
     s1.skills.push_back("OOPS");
     s1.printInfo();
+    cout<<s1.fullName(s1.first_name,s1.last_name)<<endl;
 
     Student s2("Soham","Chiplunkar");
     s2.age=24;  
