@@ -14,7 +14,11 @@ public:
     Student(){
         cout<<"Student class"<<endl;
     }
-    //This is parameterized constructor
+    //These are parameterized constructor
+
+    //declare constructor here and define outside the class
+    Student(string st);
+
     Student(string name,string surname){
         first_name=name;
         last_name=surname;
@@ -42,6 +46,12 @@ string Student::fullName(string name,string surname){
     return name+" "+surname;
 }
 
+
+//declaring the constructor outside the class
+Student::Student(string st){
+    cout<<"Student constructor with 1 parameter created"<<endl;
+}
+
 int main(){
     //Creation of object of a class
     Student s1("Rhutvij","Chiplunkar");
@@ -58,6 +68,8 @@ int main(){
     s2.skills.push_back("Forensics");
     s2.skills.push_back("Security");
     s2.printInfo();
+
+    Student s3("Student");
 
     //This is the array of objects
     Student St[5];
