@@ -10,10 +10,10 @@ public:
     vector<string> skills;
 
     //constructor -->name same as that of class, invoked when object is created, NO RETURN TYPE
-
     Student(){
         cout<<"Student class"<<endl;
     }
+    
     //These are parameterized constructor
 
     //declare constructor here and define outside the class
