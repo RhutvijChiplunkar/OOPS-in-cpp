@@ -68,6 +68,15 @@ class Child:public Father,public Mother{
 
 };
 
+/*NOTE:Modes of Inheritance
+
+1) Public mode: If we derive a sub class from a public base class. Then the public member of the base class will become public in the derived 
+class and protected members of the base class will become protected in derived class.
+2) Protected mode: If we derive a sub class from a Protected base class. Then both public member and protected members of the base class will 
+become protected in derived class.
+3) Private mode: If we derive a sub class from a Private base class. Then both public member and protected members of the base class will 
+become Private in derived class. */
+
 int main(){
     Vehicle V;  //Vehicle constructor called
     Bike B;     //Vehicle and Bike constructor called
